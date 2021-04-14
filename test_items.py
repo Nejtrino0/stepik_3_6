@@ -13,4 +13,3 @@ class Test_items:
         button = WebDriverWait(browser, 5).until(
             EC.element_to_be_clickable((By.CSS_SELECTOR, "#add_to_basket_form > button")))
         assert button, "Отсутствует кнопка добавления к корзину или она не активна"
-        button.click()
