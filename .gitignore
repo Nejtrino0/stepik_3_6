@@ -1,0 +1,5 @@
+.pytest_cache
+selenium
+selenium_s
+.idea
+__pycache__
