@@ -8,7 +8,7 @@ from time import sleep
 class Test_items:
     link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207"
 
-    def test_items_f(self, browser):
+    def test_guest_should_see_button(self, browser):
         browser.get(Test_items.link)
         button = WebDriverWait(browser, 5).until(
             EC.element_to_be_clickable((By.CSS_SELECTOR, "#add_to_basket_form > button")))
